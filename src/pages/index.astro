@@ -1,0 +1,32 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Logo from '../img/Astro ubuntu.png'
+import Image from 'astro/components/Image.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<div id="title"><Image src={Logo} alt="Astro's theme logo" height={100}/><h1>Ubuntu Theme!</h1></div>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ad consequatur id optio modi facere deserunt 
+			ullam, porro veritatis architecto quos quae consequuntur harum eaque quasi culpa quas vitae ipsum.</p>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	#title{
+		display: flex;
+		flex-direction: row;
+	}
+
+</style>

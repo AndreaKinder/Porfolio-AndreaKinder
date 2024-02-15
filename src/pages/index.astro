@@ -5,8 +5,8 @@ import Footer from '../components/Footer.astro';
 import Logo from '../img/profile-pic-2.png'
 import Progect from '../components/CardProgect.astro';
 import Image from 'astro/components/Image.astro';
+import Form from '../components/form.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import CardProgect from '../components/CardProgect.astro';
 ---
 
 <!doctype html>
@@ -25,7 +25,10 @@ import CardProgect from '../components/CardProgect.astro';
 				In my free time I enjoy staying up to date with technological innovation.
 				</p>
 			</div>
-			<CardProgect />
+			<Progect />
+			<div class="section">
+				<Form />
+			</div>
 		</main>
 		<Footer />
 	</body>

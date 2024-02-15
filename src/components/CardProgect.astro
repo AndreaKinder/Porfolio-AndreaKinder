@@ -12,17 +12,14 @@ var porfolio_target = [
         Progectile_name: "Wowfinder",
         Project_description: "Utility for a role-playing game based on the Pathfinder 1ed system and set in the Warcraft universe.",
         progect_link: "https://github.com/edurne85/wowfinder/",
-    },
-    {
-        Progectile_name: "Project 3",
-        Project_description: "This is a description of Project 3",
-        progect_link: "",
     }
 ]
+
 var titulo1 = porfolio_target[0].Progectile_name;
-var descripcion1 = porfolio_target[0].Project_description; 
+var descripcion1 = porfolio_target[0].Project_description;
 var titulo2 = porfolio_target[1].Progectile_name;
 var descripcion2 = porfolio_target[1].Project_description;
+var linkProgect2 = porfolio_target[1].progect_link;
 ---
 <main>
     <h2>Projects</h2>
@@ -40,7 +37,7 @@ var descripcion2 = porfolio_target[1].Project_description;
                 <h3>{titulo2}</h3>
                 <Image src={LogoGitHub} alt="Logo GitHub" width="120" />
                 <p>{descripcion2}</p>
-                <button>More Info</button>
+                <a href={linkProgect2}><button>More Info</button></a>
             </div>
         </div>
     </div>

@@ -1,14 +1,17 @@
 ---
+import LogoAstroUbuntu from '../img/Astro ubuntu.png';
+import LogoGitHub from '../img/GitHub.png';
+import Image from "astro/components/Image.astro";
 var porfolio_target = [
     {
-        Progectile_name: "Astro Theme",
-        Project_description: "This is a description of Project 1",
+        Progectile_name: "Ubuntu Astro",
+        Project_description: "Astro theme based on Ubuntu operating system.",
         progect_link: "",
     },
     {
-        Progectile_name: "Project 2",
-        Project_description: "This is a description of Project 2",
-        progect_link: "",
+        Progectile_name: "Wowfinder",
+        Project_description: "Utility for a role-playing game based on the Pathfinder 1ed system and set in the Warcraft universe.",
+        progect_link: "https://github.com/edurne85/wowfinder/",
     },
     {
         Progectile_name: "Project 3",
@@ -20,50 +23,66 @@ var titulo1 = porfolio_target[0].Progectile_name;
 var descripcion1 = porfolio_target[0].Project_description; 
 var titulo2 = porfolio_target[1].Progectile_name;
 var descripcion2 = porfolio_target[1].Project_description;
-var titulo3 = porfolio_target[2].Progectile_name;
-var descripcion3 = porfolio_target[2].Project_description; 
-
 ---
 <main>
     <h2>Proyectos</h2>
     <div id="main">
         <div class="target">
-            <h3>{titulo1}</h3>
-            <p>{descripcion1}</p>
+            <div class="progect">
+                <h3>{titulo1}</h3>
+                <Image src={LogoAstroUbuntu} alt="Logo de proyecto Astro Ubuntu Theme" width="100" />
+                <p>{descripcion1}</p>
+                <button>More Info</button>
+            </div>
         </div>
         <div class="target">
-            <h3>{titulo2}</h3>
-            <p>{descripcion2}</p>
-        </div>
-        <div class="target">
-            <h3>{titulo3}</h3>
-            <p>{descripcion3}</p>
+            <div class="progect">
+                <h3>{titulo2}</h3>
+                <Image src={LogoGitHub} alt="Logo GitHub" width="120" />
+                <p>{descripcion2}</p>
+                <button>More Info</button>
+            </div>
         </div>
     </div>
 </main>
 <style>
     main {
         border-top: 3px solid #E95420;
-        margin: 0px;
-        padding: 0px;
+        height: 20em;
     }
     #main{
         display: flex; /* Establece el contenedor principal como un contenedor flex */
         flex-wrap: nowrap; /* Evita que los elementos se envuelvan a la siguiente línea */
-        margin: 0px;
+        margin: 1em 0 1em 0;
         padding: 0px;
     }
     .target {
-        border-radius: 1px solid black;
+        display: flex;
+        justify-content: center;
         flex: 1; /* Hace que los elementos ocupen el espacio disponible de manera equitativa */
-        margin: 1em; /* Agrega un margen entre los elementos */
         width: 5em;
         height: 7em;
+    }
+
+    .progect {
+        text-align: center;
+    }
+    
+    .progect img {
+        display: block;
+        margin: 0 auto;
     }
     h2{
         margin: 0 2rem;
     }
     h3{
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+    p{margin-top: 0px}
+    button{
+        height: 3em;
+        width: 7em;
+        background-color: #E95420;
+        border-radius: 20%;
     }
 </style>

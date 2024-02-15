@@ -44,8 +44,10 @@ import { SITE_TITLE } from '../consts';
 </header>
 <style>
 	header {
+		position: fixed;
 		margin: 0;
-		padding: 0 1em;
+		padding: 0 10px 0 10px;
+		width: 100%;
 		background: #000;
 		box-shadow: 0 2px 8px rgba(var(--black), 5%);
 		color: white;
@@ -74,6 +76,9 @@ import { SITE_TITLE } from '../consts';
 	nav a.active {
 		text-decoration: none;
 		border-bottom-color: var(--accent);
+	}
+	.social-links, .internal-links {
+		margin-right: 2.5rem;
 	}
 	.social-links,
 	.social-links a {

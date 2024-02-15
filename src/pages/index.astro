@@ -2,22 +2,29 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import Logo from '../img/Astro ubuntu.png'
+import Logo from '../img/profile-pic-2.png'
+import Progect from '../components/CardProgect.astro';
 import Image from 'astro/components/Image.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import CardProgect from '../components/CardProgect.astro';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		<Header />
+		<Header id="header" />
 		<main>
-			<div id="title"><Image src={Logo} alt="Astro's theme logo" height={100}/><h1>Ubuntu Theme!</h1></div>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ad consequatur id optio modi facere deserunt 
-			ullam, porro veritatis architecto quos quae consequuntur harum eaque quasi culpa quas vitae ipsum.</p>
+			<div id="title"><Image src={Logo} alt="Foto de perfil de Andrea Villar" height={200}/><h1>Andrea Villar</h1></div>
+			<div class="section" id="SMi">
+				<h2>Sobre Mi</h2>
+				<p>Hola, soy una desarrolladora de software de Tarragona que le apasiona crear soluciones innovadoras y eficientes. 
+					Me especializo en el desarrollo web con tecnologías como HTML, CSS y JavaScript. Me encanta aprender cosas 
+					nuevas y enfrentarme a nuevos retos. En mi tiempo libre disfruto de estar al día con la innovación tecnológica.
+			</div>
+			<CardProgect />
 		</main>
 		<Footer />
 	</body>
@@ -25,8 +32,20 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 <style>
 	#title{
+		margin-top: 50px;
 		display: flex;
 		flex-direction: row;
+		gap: 4em;
+		align-items: center;
+		height: 13em;
 	}
-
+	.section{
+		border-top: 3px solid #E95420;
+		margin-top: 2em;
+		padding-top: 2em;
+		text-align: justify;
+	}
+	h2{
+		margin: 0 2rem;
+	}
 </style>

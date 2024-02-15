@@ -1,0 +1,69 @@
+---
+var porfolio_target = [
+    {
+        Progectile_name: "Astro Theme",
+        Project_description: "This is a description of Project 1",
+        progect_link: "",
+    },
+    {
+        Progectile_name: "Project 2",
+        Project_description: "This is a description of Project 2",
+        progect_link: "",
+    },
+    {
+        Progectile_name: "Project 3",
+        Project_description: "This is a description of Project 3",
+        progect_link: "",
+    }
+]
+var titulo1 = porfolio_target[0].Progectile_name;
+var descripcion1 = porfolio_target[0].Project_description; 
+var titulo2 = porfolio_target[1].Progectile_name;
+var descripcion2 = porfolio_target[1].Project_description;
+var titulo3 = porfolio_target[2].Progectile_name;
+var descripcion3 = porfolio_target[2].Project_description; 
+
+---
+<main>
+    <h2>Proyectos</h2>
+    <div id="main">
+        <div class="target">
+            <h3>{titulo1}</h3>
+            <p>{descripcion1}</p>
+        </div>
+        <div class="target">
+            <h3>{titulo2}</h3>
+            <p>{descripcion2}</p>
+        </div>
+        <div class="target">
+            <h3>{titulo3}</h3>
+            <p>{descripcion3}</p>
+        </div>
+    </div>
+</main>
+<style>
+    main {
+        border-top: 3px solid #E95420;
+        margin: 0px;
+        padding: 0px;
+    }
+    #main{
+        display: flex; /* Establece el contenedor principal como un contenedor flex */
+        flex-wrap: nowrap; /* Evita que los elementos se envuelvan a la siguiente línea */
+        margin: 0px;
+        padding: 0px;
+    }
+    .target {
+        border-radius: 1px solid black;
+        flex: 1; /* Hace que los elementos ocupen el espacio disponible de manera equitativa */
+        margin: 1em; /* Agrega un margen entre los elementos */
+        width: 5em;
+        height: 7em;
+    }
+    h2{
+        margin: 0 2rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+</style>

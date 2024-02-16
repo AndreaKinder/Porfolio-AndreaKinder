@@ -2,44 +2,35 @@
 import LogoAstroUbuntu from '../img/Astro ubuntu.png';
 import LogoGitHub from '../img/GitHub.png';
 import Image from "astro/components/Image.astro";
-var porfolio_target = [
+
+const portfolio_target = [
     {
-        Progectile_name: "Ubuntu Astro",
-        Project_description: "Astro theme based on Ubuntu operating system.",
-        progect_link: "",
+        name: "Ubuntu Astro",
+        description: "Astro theme based on Ubuntu operating system.",
+        link: "",
+        logo: LogoAstroUbuntu,
     },
     {
-        Progectile_name: "Wowfinder",
-        Project_description: "Utility for a role-playing game based on the Pathfinder 1ed system and set in the Warcraft universe.",
-        progect_link: "https://github.com/edurne85/wowfinder/",
+        name: "Wowfinder",
+        description: "Utility for a role-playing game based on the Pathfinder 1ed system and set in the Warcraft universe.",
+        link: "https://github.com/edurne85/wowfinder/",
+        logo: LogoGitHub,
     }
 ]
-
-var titulo1 = porfolio_target[0].Progectile_name;
-var descripcion1 = porfolio_target[0].Project_description;
-var titulo2 = porfolio_target[1].Progectile_name;
-var descripcion2 = porfolio_target[1].Project_description;
-var linkProgect2 = porfolio_target[1].progect_link;
 ---
 <main>
     <h2>Projects</h2>
     <div id="main">
-        <div class="target">
-            <div class="progect">
-                <h3>{titulo1}</h3>
-                <Image src={LogoAstroUbuntu} alt="Logo de proyecto Astro Ubuntu Theme" width="100" />
-                <p>{descripcion1}</p>
-                <button>More Info</button>
+        {portfolio_target.map(project => (
+            <div class="target">
+                <div class="project">
+                    <h3>{project.name}</h3>
+                    <Image src={project.logo} alt={`Logo de proyecto ${project.name}`} width="100" />
+                    <p>{project.description}</p>
+                    {project.link && <a href={project.link}><button>More Info</button></a>}
+                </div>
             </div>
-        </div>
-        <div class="target">
-            <div class="progect">
-                <h3>{titulo2}</h3>
-                <Image src={LogoGitHub} alt="Logo GitHub" width="120" />
-                <p>{descripcion2}</p>
-                <a href={linkProgect2}><button>More Info</button></a>
-            </div>
-        </div>
+        ))}
     </div>
 </main>
 <style>
@@ -48,24 +39,21 @@ var linkProgect2 = porfolio_target[1].progect_link;
         height: 20em;
     }
     #main{
-        display: flex; /* Establece el contenedor principal como un contenedor flex */
-        flex-wrap: nowrap; /* Evita que los elementos se envuelvan a la siguiente línea */
-        margin: 1em 0 1em 0;
-        padding: 0px;
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 1em 0;
     }
     .target {
         display: flex;
         justify-content: center;
-        flex: 1; /* Hace que los elementos ocupen el espacio disponible de manera equitativa */
+        flex: 1;
         width: 5em;
         height: 7em;
     }
-
-    .progect {
+    .project {
         text-align: center;
     }
-    
-    .progect img {
+    .project img {
         display: block;
         margin: 0 auto;
     }
@@ -75,7 +63,9 @@ var linkProgect2 = porfolio_target[1].progect_link;
     h3{
         font-size: 1.5rem;
     }
-    p{margin-top: 0px}
+    p{
+        margin-top: 0px
+    }
     button{
         height: 3em;
         width: 7em;

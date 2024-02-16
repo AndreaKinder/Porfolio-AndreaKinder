@@ -43,5 +43,20 @@ function validarFormulario() {
 };
 validarFormulario()
 
-</script>    
+const Form = document.getElementById('Form');
+
+function envioForm(event) {
+    event.preventDefault(); // Evitar el envío automático del formulario
+    if (validarFormulario()) {
+        console.log('El formulario es válido, se puede enviar');
+        // Aquí puedes agregar la lógica para enviar el formulario al servidor
+        // Por ejemplo, puedes usar AJAX para enviar los datos del formulario
+    } else {
+        console.log('El formulario no es válido, no se puede enviar');
+    }
+}
+
+Form.addEventListener('submit', envioForm);
+
+</script>
     

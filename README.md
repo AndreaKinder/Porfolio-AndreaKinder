@@ -1,68 +1,35 @@
-# Astro Starter Kit: Blog
+##  Porfolio Astro - Desarrolladora de Software
 
-```sh
-npm create astro@latest -- --template blog
-```
+**¡Hola!**  Soy Andrea, una apasionada desarrolladora de software con 6 messes de experiencia en la creación de aplicaciones web modernas y atractivas. Este repositorio presenta mi porfolio personal, construido con Astro.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/blog)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/blog/devcontainer.json)
+** Proyectos:**
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+* **[Nombre del proyecto 1]:** [Descripción breve del proyecto 1]. [Enlace al proyecto 1]
+* **[Nombre del proyecto 2]:** [Descripción breve del proyecto 2]. [Enlace al proyecto 2]
+* **[Nombre del proyecto 3]:** [Descripción breve del proyecto 3]. [Enlace al proyecto 3]
 
-![blog](https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d)
+**✨ Tecnologías:**
 
-Features:
+Este porfolio está construido con las siguientes tecnologías:
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+* **Astro:** Framework web moderno y ultrarrápido.
 
-## 🚀 Project Structure
+** Cómo contactarme:**
 
-Inside of your Astro project, you'll see the following folders and files:
+Si te interesa mi trabajo o deseas colaborar conmigo, puedes contactarme a través de:
 
-```text
-├── public/
-├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
-```
+* **Correo electrónico:** andreavillartr@gmail.com
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+** Recursos:**
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+* **[https://www.astro.com/index_e.htm](https://www.astro.com/index_e.htm):** Página web oficial de Astro
+* **[https://astro.build/](https://astro.build/):** Repositorio de GitHub de Astro
+* **[https://docs.astro.build/es/getting-started/](https://docs.astro.build/es/getting-started/):** Documentación oficial de Astro
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+** Agradecimientos:**
 
-Any static assets, like images, can be placed in the `public/` directory.
+Agradezco a Edurne Pascual por su apoyo y colaboración en este proyecto.
 
-## 🧞 Commands
+**¡Empieza a explorar!**
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+Espero que disfrutes navegando por mi porfolio. Si tienes alguna pregunta o comentario, no dudes en contactarme.

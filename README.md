@@ -2,12 +2,6 @@
 
 **¡Hola!**  Soy Andrea, una apasionada desarrolladora de software con 6 messes de experiencia en la creación de aplicaciones web modernas y atractivas. Este repositorio presenta mi porfolio personal, construido con Astro.
 
-**Proyectos:**
-
-* **[Nombre del proyecto 1]:** [Descripción breve del proyecto 1]. [Enlace al proyecto 1]
-* **[Nombre del proyecto 2]:** [Descripción breve del proyecto 2]. [Enlace al proyecto 2]
-* **[Nombre del proyecto 3]:** [Descripción breve del proyecto 3]. [Enlace al proyecto 3]
-
 **✨ Tecnologías:**
 
 Este porfolio está construido con las siguientes tecnologías:

@@ -1,10 +1,8 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import Logo from '../img/profile-pic-2.png'
 import Progect from '../components/CardProgect.astro';
-import Image from 'astro/components/Image.astro';
+import Footer from '../components/Footer.astro';
 import InternalLink from '../components/HeaderLink.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
@@ -17,7 +15,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header id="header" />
 		<main>
-			<div id="title"><Image src={Logo} alt="Foto de perfil de ${SITE_TITLE}" height={200}/><h1>{SITE_TITLE}</h1></div>
+			<div id="title"><h1>{SITE_TITLE}</h1></div>
 			<div class="section" id="SMi">
 				<h2>About Me</h2>
 				<p>Hello, I am a software developer from Tarragona who is passionate about creating innovative and efficient solutions. 
@@ -37,10 +35,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 <style>
 	#title{
 		margin-top: 55px;
-		display: flex;
-		flex-direction: row;
-		gap: 2em;
 		align-items: center;
+		text-align: center;
 	}
 	.section{
 		border-top: 3px solid #E95420;

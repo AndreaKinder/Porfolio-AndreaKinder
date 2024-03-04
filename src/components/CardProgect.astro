@@ -1,23 +1,23 @@
 ---
-import LogoAstroUbuntu from '../img/Astro ubuntu.png';
-import LogoGitHub from '../img/GitHub.png';
-import Image from "astro/components/Image.astro";
 
 const portfolio_target = [
     {
         name: "Ubuntu Astro",
         description: "An Astro theme inspired by the Ubuntu operating system. 🌟🚀",
         link: "https://github.com/AndreaKinder/Theme-Ubuntu",
+        progect:"https://github.com/AndreaKinder/Theme-Ubuntu",
     },
     {
         name: "Wowfinder",
         description: "Utility for a role-playing game.🎲📚",
         link: "https://github.com/edurne85/wowfinder/",
+        progect:"https://github.com/edurne85/wowfinder/",
     },
     {
         name: "CSS Notes",
         description: "A tool to display Markdown as HTML and CSS. 📝🔍",
         link: "https://github.com/AndreaKinder/css-markdown-notes-editor",
+        progect:"https://css-markdown-notes-editor.andreavillar.tech/",
     },
 ]
 ---
@@ -37,7 +37,7 @@ const portfolio_target = [
                             ></path></svg>
                     </a>
                     <p>{project.description}</p>
-                    {project.link && <a href={project.link}><button>More Info</button></a>}
+                    {project.link && <a href={project.progect}><button>Link to</button></a>}
                 </div>
             </div>
         ))}

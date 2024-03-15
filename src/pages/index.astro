@@ -43,20 +43,26 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 				<InternalLink href="/form">~ Contact ~</HeaderLink>
 			</div>
 		</main>
-		<Footer />
+		<div class="section">
+			<Footer />
+		</div>
 	</body>
 </html>
 
 <style>
 	#title{
 		margin-top: 55px;
+		height: max-content;
+		max-width: auto	;
 	}
 	.nameTitle{
+		height: max-content;
 		display: flex;
 		flex-direction: row;
 		gap: 20px;
 		justify-content: center;
 		align-items: center;
+		font-size: 25px;
 	}
 	#tech{
 		flex-wrap: wrap;
@@ -67,6 +73,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		padding-top: 2em;
 		text-align: justify;
 		padding-bottom: 2em;
+		height: max-content;
 	}
 	h2{
 		margin: 0 2rem;

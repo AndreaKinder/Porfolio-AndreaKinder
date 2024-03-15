@@ -46,12 +46,12 @@ const portfolio_target = [
 <style>
     main {
         border-top: 3px solid #E95420;
-        height: 20em;
     }
     #main{
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         margin: 1em 0;
+        flex-wrap: wrap;
     }
     .target {
         display: flex;
@@ -83,4 +83,19 @@ const portfolio_target = [
         background-color: #E95420;
         border-radius: 20%;
     }
+    @media screen and (max-width: 700px) {
+  #main {
+    flex-wrap: wrap;
+  }
+ .target {
+    width: 100%;
+    height: auto;
+  }
+ .project {
+    text-align: left;
+  }
+ .project img {
+    width: 100%;
+  }
+}
 </style>
